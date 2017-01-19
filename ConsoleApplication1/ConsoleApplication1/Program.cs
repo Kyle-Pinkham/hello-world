@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+   public class CreateFileOrFolder
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("This is a test");
-        
+            string folderName = @"C:\Users\Kyle Pinkham\hello-world\ConsoleApplication1\";
         }
     }
 }
