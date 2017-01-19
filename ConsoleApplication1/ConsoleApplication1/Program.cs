@@ -3,14 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleApplication1
 {
-   public class CreateFileOrFolder
+   class Program
     {
-        static void Main()
+        //public StreamWriter (
+        //string path,
+        //  bool append );
+
+        static void Main(string[] args)
         {
-            string folderName = @"C:\Users\Kyle Pinkham\hello-world\ConsoleApplication1\";
+            string path = @"D:\\";
+            string fileName = "text.txt";
+            string textToAdd = "This is a test file for our purposes";
+            
+
+            using (StreamWriter writer = File.CreateText(path+fileName))
+            {
+                writer.Write(textToAdd);
+            }
+
+
+
+            Console.ReadLine();
         }
     }
 }
