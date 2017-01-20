@@ -11,9 +11,9 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            string path = @"D:\\";
-            string fileName = "text.txt";
-            string textToAdd = "This is a test file for our purposes";
+            string path = @"C:\Users\Kyle Pinkham\hello-world";
+            string fileName = "text2.txt";
+            string textToAdd = "Nice butts";
             int x = 3;
            
 
