@@ -14,12 +14,12 @@ namespace ConsoleApplication1
             string path = @"D:\\";
             string fileName = "text.txt";
             string textToAdd = "This is a test file for our purposes";
-
+            int x = 3;
             string text2Add = (x);
 
             using (StreamWriter writer = File.CreateText(path+fileName))
             {
-                writer.Write(textToAdd);
+                writer.Write(textToAdd+text2Add);
             }
 
 
