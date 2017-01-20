@@ -19,7 +19,7 @@ namespace ConsoleApplication1
 
             using (StreamWriter writer = File.CreateText(path+fileName))
             {
-                writer.Write(textToAdd+x);
+                writer.Write(textToAdd+" "+x);
             }
 
 
